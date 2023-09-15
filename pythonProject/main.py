@@ -34,7 +34,7 @@ resources = {
 }
 
 
-### Complete functions ###
+### Complete functions ####
 
 class SandwichMachine:
 
