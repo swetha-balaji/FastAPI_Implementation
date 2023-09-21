@@ -1,6 +1,7 @@
 import Data
 import cashier
 import sandwich_makerr
+#imported Data, cashier and sandwich_makerr
 from sandwich_makerr import SandwichMaker
 from cashier import Cashier
 
@@ -10,9 +11,6 @@ resources = Data.resources
 recipes = Data.recipes
 #sandwich_maker_instance =
 #cashier_instance =
-
-
-
 
 def main():
 
