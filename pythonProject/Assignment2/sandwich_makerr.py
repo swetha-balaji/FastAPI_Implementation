@@ -1,3 +1,4 @@
+import Data
 class SandwichMaker:
     def __init__(self, resources):
         self.machine_resources = resources
@@ -12,4 +13,14 @@ class SandwichMaker:
                 return False
         return True
 
-    #def make_sandwich(self, sandwich_size, order_ingredients):
+    def make_sandwich(self, sandwich_size, order_ingredients):
+        """Deduct the required ingredients from the resources.
+           Hint: no output"""
+        if self.check_resources(order_ingredients):
+            cost = main.recipes[sandwich_size]["cost"]
+            print(f"Please insert coins. ")
+            coins = self.process_coins()
+            if self.transaction_result(coins, cost):
+                for item, amount in order_ingredients.items():
+                    self.machine_resources[item] -= amount
+                print(f"{sandwich_size} sandwich is ready. Bon appetit!")
