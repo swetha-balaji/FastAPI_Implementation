@@ -1,11 +1,12 @@
 class Cashier:
-    def __init__(self):
-        pass
+   # def __init__(self):
+    #    pass
 
     def process_coins(self):
         """Returns the total calculated from coins inserted.
            Hint: include input() function here, e.g. input("how many quarters?: ")"""
-        # if there are enough resources it prompts the user to insert coins for payment
+        # if there are enough resources it prompts the
+        # user to insert coins for payment
         large_dollar = int(input("how many large dollars?: "))
         half_dollar = int(input("how many half dollars?: "))
         quarter = int(input("how many quarters?: "))
